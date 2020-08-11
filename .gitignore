@@ -1,0 +1,9 @@
+# npm
+node_modules
+.npm
+npm-debug.log
+# mac
+.DS_Store
+.idea
+dist
+package-lock.json
