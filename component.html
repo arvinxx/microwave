@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      @-webkit-keyframes pulse {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ctnr {
+        z-index: 1000;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      .ldr {
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: auto;
+        width: 36px;
+        height: 36px;
+      }
+
+      .ldrBlk {
+        height: 35%;
+        width: 35%;
+        -webkit-animation: pulse 0.75s ease-in infinite alternate;
+        animation: pulse 0.75s ease-in infinite alternate;
+        background-color: #1890ff;
+      }
+
+      .anDelay {
+        -webkit-animation-delay: 0.75s;
+        animation-delay: 0.75s;
+      }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-174951232-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-174951232-1");
+    </script>
+    <link rel="stylesheet" href="./antdesigns.8db3d880.chunk.css" />
+    <link rel="stylesheet" href="./antd.0590f18c.chunk.css" />
+    <link rel="stylesheet" href="./default.umi.4ff41d6d.chunk.css" />
+    <script>
+      window.routerBase = location.pathname
+        .split("/")
+        .slice(0, -1)
+        .concat("")
+        .join("/");
+    </script>
+    <script>
+      window.publicPath =
+        location.protocol +
+        "//" +
+        location.hostname +
+        (location.port ? ":" + location.port : "") +
+        window.routerBase;
+    </script>
+    <script>
+      //! umi version: 3.2.9
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="body">
+        <div class="ctnr">
+          <div class="ldr">
+            <div class="ldrBlk"></div>
+            <div class="ldrBlk anDelay"></div>
+            <div class="ldrBlk anDelay"></div>
+            <div class="ldrBlk"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./antdesigns.js"></script>
+    <script src="./antd.js"></script>
+    <script src="./vendors.js"></script>
+    <script src="./default.umi.js"></script>
+    <script src="./umi.876f86ad.js"></script>
+  </body>
+</html>
